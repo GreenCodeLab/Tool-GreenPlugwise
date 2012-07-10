@@ -163,7 +163,7 @@ public class TimerMesure
         
             }
 
-    public static void mesure_init_2()
+    public static void mesure_init_2(List<String> names)
     {
 
         PlugwiseLib.BLL.BC.PlugwiseDeviceInfo calib;
@@ -184,11 +184,11 @@ public class TimerMesure
                     Plug_Calib[i] = calib;
                     if (bufferisation == false)
                     {
-                        entete = entete + "Puissance " + (i + 1).ToString() + ";%CPU " + (i + 1).ToString() + ";Bytes/S " + (i + 1).ToString()  + ";Disk Bytes/S " + (i + 1).ToString() + ";consommation " + (i + 1).ToString() + ";Impact consommation " + (i + 1).ToString();
+                        entete = entete + names[i] + ";%CPU " + (i + 1).ToString() + ";Bytes/S " + (i + 1).ToString()  + ";Disk Bytes/S " + (i + 1).ToString() + ";consommation " + (i + 1).ToString() + ";Impact consommation " + (i + 1).ToString();
                     }
                     else
                     {
-                        entete = entete + "Puissance " + (i + 1).ToString() + ";";
+                        entete = entete + names[i] + ";";
                     }
                     Array.Resize(ref Plug_num, num + 1);
                     Plug_num[num] = i;

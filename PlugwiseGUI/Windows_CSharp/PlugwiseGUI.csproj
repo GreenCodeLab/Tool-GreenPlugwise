@@ -52,7 +52,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="PlugwiseLib">
-      <HintPath>..\..\PlugwiseLib\Windows_CSharp\bin\Release\PlugwiseLib.dll</HintPath>
+      <HintPath>..\..\Binaires\Windows\PlugwiseLib.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -67,6 +67,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Configurater.cs" />
+    <Compile Include="Messager.cs" />
     <Compile Include="Timers.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
